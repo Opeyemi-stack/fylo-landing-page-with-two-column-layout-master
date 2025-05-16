@@ -85,11 +85,102 @@ body {
   box-shadow: 3px 5px 5px hsl(0, 0%, 75%);
 }
 
-@media (min-width: 1440px) {
-  /* .header {
-    padding: ;
-  } */
+.features {
+  background: url(/images/bg-curve-mobile.svg) no-repeat center top;
+  background-size: cover;
+  margin: 64px 0 128px 0;
+  padding: 0 4.8vw;
+}
 
+.features__img {
+  padding: 96px 0;
+  width: 100%;
+  height: auto;
+}
+
+.features__title {
+  color: hsl(243, 87%, 12%);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  /* font-weight: 400; */
+}
+
+.features__description {
+  padding: 36px 0;
+  color: hsl(238, 22%, 44%);
+  line-height: 1.7;
+  font-weight: 700;
+}
+
+.features__description-one {
+  margin-bottom: 16px;
+}
+
+.features__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 2px solid hsl(170, 45%, 43%);
+  margin: 16px auto 64px;
+  padding-bottom: 8px;
+  width: fit-content;
+}
+
+.features__cta-link {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.arrow-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 15px hsl(0, 0%, 75%), -5px -5px 5px hsl(0, 0%, 75%);
+}
+
+.qoutes-icon-wrapper {
+  margin-bottom: 30px;
+}
+
+.testimonial__description {
+  color: hsl(243, 87%, 12%);
+  line-height: 1.7;
+  font-weight: 700;
+}
+
+.testimonial__meta-data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.testimonial__thumbnail {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.testimonial__author {
+  color: hsl(243, 87%, 12%);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.testimonial__author-occupation {
+  color: hsl(243, 87%, 12%);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (min-width: 1440px) {
   .nav__link {
     font-size: 1.125rem;
     font-weight: 400;
@@ -102,12 +193,6 @@ body {
     padding: 64px;
     gap: 64px;
   }
-
-  /* .hero__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  } */
 
   .hero__img-wrapper,
   .hero__content {
@@ -136,5 +221,37 @@ body {
 
   .hero__btn {
     flex-grow: 1;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features__img-wrapper,
+  .features__content {
+    width: 50%;
+  }
+
+  .features__img {
+    background: url(images/bg-curve-desktop.svg);
+  }
+
+  .features__title {
+    text-align: left;
+  }
+
+  .features__description {
+    padding: 12px 0;
+  }
+
+  .features__cta {
+    margin: 16px 0 32px;
+  }
+
+  .testimonial {
+    width: 60%;
   }
 }
