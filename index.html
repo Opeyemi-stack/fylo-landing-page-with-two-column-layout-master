@@ -11,19 +11,17 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header class="header">
@@ -33,13 +31,13 @@
       <nav class="nav">
         <ul class="nav__item">
           <li class="nav__list-item">
-            <a href="#" class="nav__link">Features</a>
+            <a href="#" class="nav__link nav__link--hover">Features</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link">Team</a>
+            <a href="#" class="nav__link nav__link--hover">Team</a>
           </li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link">Sign in</a>
+            <a href="#" class="nav__link nav__link--hover">Sign in</a>
           </li>
         </ul>
       </nav>
@@ -65,7 +63,7 @@
               placeholder="Enter your emial..."
               class="hero__input-field"
             />
-            <button class="btn hero__btn">Get Started</button>
+            <button class="hero__btn btn--hover">Get Started</button>
           </div>
         </div>
       </div>
@@ -94,7 +92,11 @@
           </p>
           <div class="testimonial">
             <span class="qoutes-icon-wrapper">
-              <img src="/images/icon-quotes.svg" alt="qoutes" />
+              <img
+                class="quotes-icon"
+                src="/images/icon-quotes.svg"
+                alt="qoutes"
+              />
             </span>
             <p class="testimonial__description">
               Fylo has improved our team productivity by an order of magnitude.
@@ -120,21 +122,105 @@
           </div>
         </div>
       </div>
+      <div class="subscription">
+        <div class="subscription__text-content">
+          <h2 class="subscription__title">Get early access today</h2>
+          <p class="subscription__description">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form class="subscriptio
+            class="subscription__email-field"
+            placeholder="example@email.com"
+            type="email"
+            name="email"
+          />
+          <button class="subscription__btn btn--hover">
+            Get Started For Free
+          </button>
+        </form>
+      </div>
     </main>
-    <!--   
-    Get early access
-    today It only takes a minute to sign up and our free starter tier is
-    extremely generous. If you have any questions, our support team would be
-    happy to help you. Get Started For Free Phone: +1-543-123-4567
-    example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy
-
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>-->
+    <footer class="footer">
+      <div class="">
+        <img class="footer__logo" src="/images/logo2.svg" alt="Logo" />
+      </div>
+      <div class="footer__flex">
+        <div class="footer__contacts">
+          <div class="footer__phone-wrapper">
+            <span class="phone-icon-wrapper">
+              <img
+                class="phone-icon"
+                src="./images/icon-phone.svg"
+                alt="Phone"
+              />
+            </span>
+            <p class="footer__phone ">
+              Phone:
+              <a class="footer__link" href="tel:+">+1-543-123-4567</a>
+            </p>
+          </div>
+          <div class="footer__email-wrapper">
+            <span class="email-icon-wrapper">
+              <img
+                class="email-icon"
+                src="./images/icon-email.svg"
+                alt="Email"
+              />
+            </span>
+            <p class="footer__email">
+              Email:
+              <a class="footer__link" href="mailto:example@fylo.com"
+                >example@fylo.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#" class="footer__link footer__link--hover">About us</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link footer__link--hover">Jobs</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link footer__link--hover">Press</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link footer__link--hover">Blog</a>
+          </li>
+        </ul>
+        <ul class="footer__list footer__list-two">
+          <li class="footer__list-item">
+            <a href="#" class="footer__link footer__link--hover">Contact us</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link footer__link--hover">Terms</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link footer__link--hover">Privacy</a>
+          </li>
+        </ul>
+        <div class="footer__socials">
+          <span class="social-icons-wrapper">
+            <i
+              class="fa-brands fa-facebook-f social-icons social-icons--hover"
+            ></i>
+          </span>
+          <span class="social-icons-wrapper">
+            <i
+              class="fa-brands fa-twitter social-icons social-icons--hover"
+            ></i>
+          </span>
+          <span class="social-icons-wrapper">
+            <i
+              class="fa-brands fa-instagram social-icons social-icons--hover"
+            ></i>
+          </span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
